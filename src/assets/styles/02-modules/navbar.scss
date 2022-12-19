@@ -1,0 +1,211 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #210a3e 0%,
+    rgba(33, 10, 62, 0.85) 34%,
+    rgba(33, 10, 62, 0.6) 65%,
+    rgba(33, 10, 62, 0) 100%
+  );
+  padding: 60px 0px;
+
+  &__small-menu-box {
+    display: none;
+
+    &__logo-responsive {
+      width: 150px;
+      height: 32px;
+    }
+
+    &__menu-icon {
+      filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
+        brightness(153%) contrast(103%);
+      cursor: pointer;
+      transition: 0.25s ease-out;
+
+      &:hover {
+        filter: invert(69%) sepia(17%) saturate(242%) hue-rotate(189deg)
+          brightness(98%) contrast(91%);
+        transition: 0.25s ease-in;
+      }
+    }
+  }
+
+  .flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__box-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 0 0 65%;
+
+    &__logo {
+      margin-right: 100px;
+      width: 150px;
+      height: 32px;
+    }
+
+    &__link-box {
+      &__link {
+        margin-right: 60px;
+        color: #ffffff;
+        font-family: "Mulish", sans-serif !important;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: capitalize;
+
+        &:last-child {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  &__box-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__phone {
+      font-family: "Mulish", sans-serif !important;
+      font-weight: 400;
+      font-size: 20px;
+      color: #ffffff;
+      margin-right: 100px;
+    }
+
+    &__button {
+      font-family: "Mulish", sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #ffffff;
+      padding: 14px 17px;
+      border: 2px solid #c000ff;
+      border-radius: 50px;
+      transition: 0.25s ease-out;
+
+      &:hover {
+        transition: 0.25s ease-in;
+        background-color: #c000ff;
+      }
+    }
+  }
+}
+
+// responsive
+@media (max-width: 1450px) {
+  .navbar {
+    &__box-1 {
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      #210a3e,
+      rgba(33, 10, 62, 0.85),
+      rgba(33, 10, 62, 0.6),
+      rgba(33, 10, 62, 0)
+    );
+    padding: 50px 30px;
+
+    &__small-menu-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .flex-box {
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      max-height: 0px;
+      overflow: hidden;
+      transition: 0.25s ease-out;
+    }
+
+    .flex-box-show {
+      max-height: 500px;
+      padding: 30px 0px;
+      transition: 0.25s ease-in;
+    }
+
+    &__box-1 {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      &__logo {
+        display: none;
+      }
+
+      &__link-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__link {
+          margin-right: 0px;
+          margin-bottom: 20px;
+          color: #ffffff;
+
+          &::after {
+            margin-top: 5px;
+            content: "";
+            height: 0.1px;
+            width: 150px;
+            display: block;
+            border-top: 0.1px solid #a9afc3;
+            transition: 0.25s ease-out;
+          }
+
+          &:hover {
+            &::after {
+              width: 300px;
+              transition: 0.25s ease-in;
+            }
+          }
+        }
+      }
+    }
+
+    &__box-2 {
+      flex-direction: column;
+      align-items: flex-start;
+
+      &__phone {
+        font-weight: 300;
+        font-size: 18px;
+        color: #ffffff;
+        margin-right: 0px;
+        margin-bottom: 20px;
+      }
+
+      &__button {
+        font-size: 18px;
+        color: #ffffff;
+        padding: 14px 17px;
+        border: 2px solid #c000ff;
+        border-radius: 50px;
+      }
+    }
+  }
+}
