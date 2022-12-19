@@ -11,6 +11,7 @@
     rgba(33, 10, 62, 0) 100%
   );
   padding: 60px 0px;
+  z-index: 10;
 
   &__small-menu-box {
     display: none;
@@ -18,6 +19,7 @@
     &__logo-responsive {
       width: 150px;
       height: 32px;
+      margin-right: 20px;
     }
 
     &__menu-icon {
@@ -101,6 +103,18 @@
   }
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.301);
+  z-index: -5;
+  display: none;
+}
+
 // responsive
 @media (max-width: 1450px) {
   .navbar {
@@ -170,10 +184,9 @@
           &::after {
             margin-top: 5px;
             content: "";
-            height: 0.1px;
             width: 150px;
             display: block;
-            border-top: 0.1px solid #a9afc3;
+            border-top: 0.5px solid #a9afc3;
             transition: 0.25s ease-out;
           }
 
@@ -207,5 +220,9 @@
         border-radius: 50px;
       }
     }
+  }
+
+  .overlay-show {
+    display: block;
   }
 }
