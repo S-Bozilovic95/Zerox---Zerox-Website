@@ -90,7 +90,7 @@
       font-weight: 400;
       font-size: 20px;
       color: #ffffff;
-      padding: 14px 17px;
+      padding: 16px 20px;
       border: 2px solid #c000ff;
       border-radius: 50px;
       transition: 0.25s ease-out;
@@ -132,13 +132,12 @@
     left: 0;
     width: 100%;
     background: linear-gradient(
-      to bottom,
-      #210a3e,
-      rgba(33, 10, 62, 0.85),
-      rgba(33, 10, 62, 0.6),
-      rgba(33, 10, 62, 0)
+      126.26deg,
+      #6f1881 0%,
+      #461483 49%,
+      #010101 100%
     );
-    padding: 50px 30px;
+    padding: 20px 30px;
 
     &__small-menu-box {
       display: flex;
@@ -205,16 +204,13 @@
       align-items: flex-start;
 
       &__phone {
-        font-weight: 300;
         font-size: 18px;
-        color: #ffffff;
         margin-right: 0px;
         margin-bottom: 20px;
       }
 
       &__button {
         font-size: 18px;
-        color: #ffffff;
         padding: 14px 17px;
         border: 2px solid #c000ff;
         border-radius: 50px;
