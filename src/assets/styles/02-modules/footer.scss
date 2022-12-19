@@ -1,0 +1,112 @@
+.ft {
+  padding: 150px 0px;
+  background: #180036;
+
+  &__flex-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__box-1 {
+    display: flex;
+
+    &__logo {
+      margin-right: 150px;
+    }
+
+    &__link-box {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      &__link {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #ffffff;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__box-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__phone {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 150%;
+      margin-right: 150px;
+      color: #ffffff;
+    }
+
+    &__button {
+      font-family: "Mulish", sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #ffffff;
+      padding: 16px 24px;
+      border: 2px solid #c000ff;
+      border-radius: 50px;
+      transition: 0.25s ease-out;
+
+      &:hover {
+        transition: 0.25s ease-in;
+        background-color: #c000ff;
+      }
+    }
+  }
+}
+
+// responsive
+
+@media (max-width: 1024px) {
+  .ft {
+    padding: 130px 0px;
+    &__flex-box {
+      flex-direction: column;
+    }
+
+    &__box-1 {
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      &__logo {
+        margin-bottom: 40px;
+      }
+
+      &__link-box {
+        &__link {
+          margin-bottom: 15px;
+        }
+      }
+    }
+
+    &__box-2 {
+      margin-top: 50px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+
+      &__phone {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+
+      &__button {
+        font-size: 18px;
+        padding: 14px 17px;
+      }
+    }
+  }
+}

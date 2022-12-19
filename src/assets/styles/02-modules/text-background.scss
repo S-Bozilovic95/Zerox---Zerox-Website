@@ -1,0 +1,146 @@
+.tb {
+  padding: 220px 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #13012a;
+
+  &__flex-box {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__text-box {
+    flex: 0 0 45%;
+
+    &__upper-title {
+      font-family: "Poppins" !important;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #a9afc3;
+
+      &::before {
+        content: "";
+        width: 60px;
+        height: 1px;
+        margin-bottom: 5px;
+        margin-right: 25px;
+        display: inline-block;
+        border: 1px solid #a9afc3;
+      }
+    }
+
+    &__title {
+      margin-top: 20px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 110%;
+      text-transform: capitalize;
+      color: #ffffff;
+      width: 90%;
+    }
+
+    &__main-desc {
+      margin-top: 40px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 150%;
+      color: #a9afc3;
+    }
+
+    &__desc {
+      margin-top: 32px;
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 170%;
+      color: #a9afc3;
+    }
+
+    &__button {
+      display: inline-block;
+      margin-top: 50px;
+      font-family: "Mulish", sans-serif !important;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      color: #ffffff;
+      padding: 16px 24px;
+      border: 2px solid #c000ff;
+      border-radius: 50px;
+      transition: 0.25s ease-out;
+
+      &:hover {
+        transition: 0.25s ease-in;
+        background-color: #c000ff;
+      }
+    }
+  }
+}
+
+// responsive
+
+@media (max-width: 1450px) {
+  .tb {
+    &__text-box {
+      flex: 0 0 60%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .tb {
+    padding: 130px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #13012a;
+
+    &__flex-box {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__text-box {
+      flex: 0 0 100%;
+
+      &__upper-title {
+        &::before {
+          content: "";
+          width: 40px;
+        }
+      }
+
+      &__title {
+        margin-top: 20px;
+        font-size: 45px;
+        width: 100%;
+      }
+
+      &__main-desc {
+        font-size: 18px;
+      }
+
+      &__desc {
+        margin-top: 32px;
+        font-size: 18px;
+      }
+
+      &__button {
+        font-size: 18px;
+        padding: 14px 17px;
+
+        &:hover {
+          transition: 0.25s ease-in;
+          background-color: #c000ff;
+        }
+      }
+    }
+  }
+}

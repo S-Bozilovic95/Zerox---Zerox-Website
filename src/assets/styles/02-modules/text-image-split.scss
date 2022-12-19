@@ -92,7 +92,7 @@
 
 @media (max-width: 1024px) {
   .tis {
-    padding: 150px 30px;
+    padding: 130px 0px;
 
     &__text-box {
       &__upper-title {
@@ -103,18 +103,15 @@
       }
 
       &__title {
-        margin-top: 22px;
         font-size: 80px;
       }
 
       &__desc {
-        margin-top: 30px;
         font-size: 18px;
         width: 100%;
       }
 
       &__button {
-        margin-top: 50px;
         padding: 14px 38px;
         font-size: 18px;
       }
@@ -122,6 +119,16 @@
 
     &__image {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tis {
+    &__text-box {
+      &__title {
+        font-size: 45px;
+      }
     }
   }
 }
