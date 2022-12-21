@@ -7,6 +7,8 @@
   position: relative;
 
   &__text-box {
+    margin-left: 90px;
+
     &__upper-title {
       font-family: "Poppins" !important;
       font-weight: 400;
@@ -209,7 +211,9 @@
 // responsive
 @media (max-width: 1500px) {
   .cs {
+    padding: 130px 0px;
     &__card-box {
+      margin-top: 40px;
       position: relative;
       top: 0;
       flex-wrap: wrap;
@@ -219,7 +223,6 @@
 
       &__card {
         padding: 50px 100px 200px;
-        margin: 20px;
 
         &__card-desc {
           font-size: 18px;
@@ -231,9 +234,9 @@
 
 @media (max-width: 1024px) {
   .cs {
-    padding: 130px 0px;
-
     &__text-box {
+      margin-left: 0px;
+
       &__upper-title {
         &::before {
           content: "";
@@ -258,9 +261,9 @@
       align-items: center;
 
       &__card {
-        width: 100%;
         padding: 50px 50px 130px;
-        margin: 40px 0px 0px;
+        margin-bottom: 40px;
+        width: 80%;
       }
     }
 
@@ -271,7 +274,7 @@
       &__card {
         padding: 50px 50px 130px;
         margin-bottom: 40px;
-        width: 100%;
+        width: 80%;
       }
     }
   }

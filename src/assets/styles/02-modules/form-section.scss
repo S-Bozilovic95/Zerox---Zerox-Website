@@ -1,16 +1,11 @@
-.tb {
-  padding: 220px 0px;
-  background-size: cover;
-  background-repeat: no-repeat;
+.fs {
+  padding: 210px 0px;
   background-color: #13012a;
-
-  &__flex-box {
-    display: flex;
-    justify-content: flex-end;
-  }
+  background-position: center;
+  background-size: cover;
 
   &__text-box {
-    flex: 0 0 45%;
+    margin-bottom: 70px;
 
     &__upper-title {
       font-family: "Poppins" !important;
@@ -41,10 +36,10 @@
       line-height: 110%;
       text-transform: capitalize;
       color: #ffffff;
-      width: 90%;
+      width: 50%;
     }
 
-    &__main-desc {
+    &__desc {
       margin-top: 40px;
       font-family: "Poppins";
       font-style: normal;
@@ -52,16 +47,44 @@
       font-size: 22px;
       line-height: 150%;
       color: #a9afc3;
+      width: 55%;
     }
+  }
 
-    &__desc {
-      margin-top: 32px;
+  &__form-box {
+    input {
+      margin-right: 30px;
+      padding: 15px 0px;
+      outline: none;
+      background: transparent;
+      border: none;
+      width: 262px;
+      border-bottom: 1px solid #3a3f50;
       font-family: "Mulish";
       font-style: normal;
       font-weight: 400;
       font-size: 18px;
       line-height: 170%;
       color: #a9afc3;
+      opacity: 0.5;
+    }
+
+    textarea {
+      margin-top: 37px;
+      outline: none;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #3a3f50;
+      width: 555px;
+      height: 100px;
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 170%;
+      color: #a9afc3;
+      resize: none;
+      opacity: 0.5;
     }
 
     &__button {
@@ -86,30 +109,11 @@
 }
 
 // responsive
-
-@media (max-width: 1450px) {
-  .tb {
-    &__text-box {
-      flex: 0 0 60%;
-    }
-  }
-}
-
 @media (max-width: 1024px) {
-  .tb {
+  .fs {
     padding: 130px 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #13012a;
-
-    &__flex-box {
-      display: flex;
-      justify-content: flex-end;
-    }
 
     &__text-box {
-      flex: 0 0 100%;
-
       &__upper-title {
         &::before {
           content: "";
@@ -120,16 +124,23 @@
       &__title {
         margin-top: 20px;
         font-size: 45px;
-        width: 100%;
-      }
-
-      &__main-desc {
-        font-size: 18px;
       }
 
       &__desc {
-        margin-top: 32px;
         font-size: 18px;
+        width: 100%;
+      }
+    }
+
+    &__form-box {
+      input {
+        width: 80%;
+        margin-bottom: 10px;
+      }
+
+      textarea {
+        margin-top: 30px;
+        width: 80%;
       }
 
       &__button {
