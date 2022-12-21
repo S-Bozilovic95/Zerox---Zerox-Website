@@ -1,4 +1,4 @@
-.tis {
+.hero {
   padding: 250px 0px;
   background: #180036;
   color: white;
@@ -91,7 +91,7 @@
 // responsive
 
 @media (max-width: 1024px) {
-  .tis {
+  .hero {
     padding: 130px 0px;
 
     &__text-box {
