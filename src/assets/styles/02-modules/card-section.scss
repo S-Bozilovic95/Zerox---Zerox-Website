@@ -261,9 +261,13 @@
       align-items: center;
 
       &__card {
-        padding: 50px 50px 130px;
+        padding: 50px 20px 110px;
         margin-bottom: 40px;
         width: 80%;
+
+        &__card-desc {
+          width: 80%;
+        }
       }
     }
 
@@ -272,9 +276,13 @@
       margin-top: 40px;
 
       &__card {
-        padding: 50px 50px 130px;
+        padding: 50px 20px 110px;
         margin-bottom: 40px;
         width: 80%;
+
+        &__card-desc {
+          width: 80%;
+        }
       }
     }
   }
