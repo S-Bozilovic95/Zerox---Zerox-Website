@@ -10,12 +10,13 @@
     rgba(33, 10, 62, 0.6) 65%,
     rgba(33, 10, 62, 0) 100%
   );
-  padding: 60px 0px;
+  padding: 40px 0px;
   z-index: 10;
-  transition: 0.25s ease-out;
+  transition: 0.25s ease-in-out;
 
   &__small-menu-box {
     display: none;
+    position: relative;
 
     &__logo-responsive {
       width: 150px;
@@ -27,12 +28,14 @@
       filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg)
         brightness(153%) contrast(103%);
       cursor: pointer;
-      transition: 0.25s ease-out;
+      transition: 0.15s ease-out;
+      position: absolute;
+      right: 0;
 
       &:hover {
         filter: invert(69%) sepia(17%) saturate(242%) hue-rotate(189deg)
           brightness(98%) contrast(91%);
-        transition: 0.25s ease-in;
+        transition: 0.15s ease-in;
       }
     }
 
@@ -41,7 +44,9 @@
         brightness(153%) contrast(103%);
       cursor: pointer;
       transition: 0.25s ease-out;
-      display: none;
+      position: absolute;
+      right: 0;
+      height: 0px;
 
       &:hover {
         filter: invert(69%) sepia(17%) saturate(242%) hue-rotate(189deg)
@@ -71,6 +76,10 @@
     }
 
     &__link-box {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
       &__link {
         margin-right: 40px;
         color: #ffffff;
@@ -118,6 +127,10 @@
   }
 }
 
+.navbar-show {
+  background: #180036 !important;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -134,24 +147,50 @@
 @media (max-width: 1450px) {
   .navbar {
     &__box-1 {
-      flex: 0 0 100%;
+      flex: 0 0 55%;
       margin-bottom: 20px;
+      &__logo {
+        margin-right: 25px;
+      }
+
+      &__link-box {
+        &__link {
+          margin-right: 15px;
+        }
+      }
     }
 
     &__box-2 {
       &__phone {
-        margin-right: 40px;
+        margin-right: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .navbar {
+    &__box-1 {
+      &__link-box {
+        &__link {
+          &:last-child {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+
+    &__box-2 {
+      &__phone {
+        margin-right: 20px;
+        font-size: 18px;
       }
     }
   }
 }
 
 @media (max-width: 1024px) {
-  .navbar-show {
-    background: #180036 !important;
-    transition: 0.25s ease-in;
-  }
-
   .navbar {
     position: fixed;
     top: 0;
@@ -203,21 +242,9 @@
           margin-bottom: 20px;
           color: #ffffff;
 
-          // &::after {
-          //   margin-top: 5px;
-          //   content: "";
-          //   width: 150px;
-          //   display: block;
-          //   border-top: 0.5px solid #a9afc3;
-          //   transition: 0.25s ease-out;
-          // }
-
-          // &:hover {
-          //   &::after {
-          //     width: 300px;
-          //     transition: 0.25s ease-in;
-          //   }
-          // }
+          &:last-child {
+            margin-top: 0px;
+          }
         }
       }
     }
