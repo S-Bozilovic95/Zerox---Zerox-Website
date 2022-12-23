@@ -1,41 +1,29 @@
 /* eslint-disable no-unused-vars */
-
 let menu = document.querySelector('.flex-box');
 let navbar = document.querySelector('.navbar');
 let hamburger = document.querySelector('.navbar__small-menu-box__menu-icon');
-let closeIcon = document.querySelector('.navbar__small-menu-box__close-icon');
 let overlay = document.querySelector('.overlay');
+let menuActive = false;
 
 // open dropdown
 if (menu && hamburger && overlay && navbar) {
     hamburger.addEventListener('click', () => {
-        menu.classList.add('flex-box-show');
+        menu.classList.toggle('flex-box-show');
+        overlay.classList.toggle('overlay-show');
+        hamburger.classList.toggle('open-menu');
         navbar.classList.add('navbar-show');
-        overlay.classList.add('overlay-show');
-        hamburger.style.transform = 'rotateX(90deg)';
-        closeIcon.style.transform = 'rotateX(0deg)';
-        closeIcon.style.height = '40px';
+        menuActive = !menuActive;
+
+        if (window.pageYOffset < 200 && !menuActive) {
+            navbar.classList.remove('navbar-show');
+        }
     });
 
     overlay.addEventListener('click', () => {
         menu.classList.remove('flex-box-show');
         overlay.classList.remove('overlay-show');
-        hamburger.style.transform = 'rotateX(0deg)';
-        closeIcon.style.transform = 'rotateX(90deg)';
-
-        if (window.pageYOffset < 200) {
-            navbar.classList.remove('navbar-show');
-        }
-    });
-}
-
-// close dropdown
-if (menu && closeIcon && overlay && navbar) {
-    closeIcon.addEventListener('click', () => {
-        menu.classList.remove('flex-box-show');
-        overlay.classList.remove('overlay-show');
-        hamburger.style.transform = 'rotateX(0deg)';
-        closeIcon.style.transform = 'rotateX(90deg)';
+        hamburger.classList.remove('menu-open');
+        menuActive = false;
 
         if (window.pageYOffset < 200) {
             navbar.classList.remove('navbar-show');
@@ -48,8 +36,11 @@ if (navbar) {
     window.addEventListener('scroll', () => {
         if (window.pageYOffset > 200) {
             navbar.classList.add('navbar-show');
-        } else {
+        }
+
+        if (window.pageYOffset < 200 && !menuActive) {
             navbar.classList.remove('navbar-show');
         }
     });
 }
+

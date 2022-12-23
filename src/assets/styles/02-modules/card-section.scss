@@ -1,5 +1,5 @@
 .cs {
-  padding: 230px 0px 130px;
+  padding: 230px 0px 700px;
   background-size: auto;
   background-repeat: no-repeat;
   background-color: #180036;
@@ -20,7 +20,10 @@
     color: white;
   }
   &__card-box-desktop {
-    width: 1140px;
+    position: absolute !important;
+    right: 0;
+    top: 500px;
+    width: 1520px;
     margin-top: 70px;
     display: flex;
     justify-content: center;
@@ -105,9 +108,11 @@
     }
 
     &__card {
+      padding: 50px 20px 200px;
+      width: 80%;
+      margin: auto;
       text-align: center;
       align-items: center;
-      padding: 50px 112px 230px;
       background: linear-gradient(180deg, #471483 0%, rgba(25, 28, 38, 0) 100%);
       transition: 0.25s ease-out;
 
@@ -133,7 +138,7 @@
         line-height: 130%;
         text-transform: capitalize;
         color: #a9afc3;
-        width: 156px;
+        width: 60%;
         margin: auto;
       }
     }
@@ -237,6 +242,7 @@
 // responsive
 @media (max-width: 1500px) {
   .cs {
+    padding: 130px 0px;
     &__text-box {
       margin-left: 0px;
     }
@@ -244,17 +250,13 @@
     // desktop
     &__card-box-desktop {
       width: 100%;
-      margin-top: 40px;
-      position: relative;
+
+      position: relative !important;
       top: 0;
-      flex-wrap: wrap;
-      display: flex;
-      align-items: center;
-      justify-content: center;
 
       &__card {
-        padding: 110px 50px 200px;
-        flex: 0 0 30%;
+        padding: 110px 20px 200px;
+        flex: 0 0 100%;
 
         &__card-desc {
           font-size: 18px;
@@ -266,8 +268,6 @@
 
 @media (max-width: 1024px) {
   .cs {
-    padding: 130px 0px;
-
     // variation 1
     // desktop
     .swiper-button-next {
@@ -285,18 +285,6 @@
     // mobile
     &__card-box-mobile {
       display: flex;
-      justify-content: center;
-
-      &__card {
-        padding: 50px 20px 110px;
-        margin-bottom: 40px;
-        width: 80%;
-        margin: auto;
-
-        &__card-desc {
-          width: 60%;
-        }
-      }
     }
 
     // variation 2

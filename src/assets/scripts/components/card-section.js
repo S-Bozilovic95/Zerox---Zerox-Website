@@ -2,14 +2,10 @@
 import Swiper from 'swiper';
 
 const swiperDesktop = new Swiper('.cs__card-box-desktop', {
-    slidesPerView: 3,
+    slidesPerView: 4,
     loop: true,
     spaceBetween: 0,
-    centeredSlides: true,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+    centeredSlides: false,
 });
 
 const swiperMobile = new Swiper('.cs__card-box-mobile', {
