@@ -1,5 +1,5 @@
 .cs {
-  padding: 230px 0px 700px;
+  padding: 230px 0px 130px;
   background-size: auto;
   background-repeat: no-repeat;
   background-color: #180036;
@@ -20,10 +20,7 @@
     color: white;
   }
   &__card-box-desktop {
-    position: absolute !important;
-    right: 0;
-    top: 500px;
-    width: 1520px;
+    width: 100%;
     margin-top: 70px;
     display: flex;
     justify-content: center;
@@ -242,21 +239,14 @@
 // responsive
 @media (max-width: 1500px) {
   .cs {
-    padding: 130px 0px;
     &__text-box {
       margin-left: 0px;
     }
 
     // desktop
     &__card-box-desktop {
-      width: 100%;
-
-      position: relative !important;
-      top: 0;
-
       &__card {
         padding: 110px 20px 200px;
-        flex: 0 0 100%;
 
         &__card-desc {
           font-size: 18px;
