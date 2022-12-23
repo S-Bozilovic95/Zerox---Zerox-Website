@@ -6,49 +6,6 @@
 
   &__text-box {
     margin-bottom: 70px;
-
-    &__upper-title {
-      font-family: "Poppins" !important;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: #a9afc3;
-
-      &::before {
-        content: "";
-        width: 60px;
-        height: 1px;
-        margin-bottom: 5px;
-        margin-right: 25px;
-        display: inline-block;
-        border: 1px solid #a9afc3;
-      }
-    }
-
-    &__title {
-      margin-top: 20px;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 64px;
-      line-height: 110%;
-      text-transform: capitalize;
-      color: #ffffff;
-      width: 50%;
-    }
-
-    &__desc {
-      margin-top: 40px;
-      font-family: "Poppins";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 22px;
-      line-height: 150%;
-      color: #a9afc3;
-      width: 55%;
-    }
   }
 
   &__form-box {
@@ -86,25 +43,6 @@
       resize: none;
       opacity: 0.5;
     }
-
-    &__button {
-      display: inline-block;
-      margin-top: 50px;
-      font-family: "Mulish", sans-serif !important;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      color: #ffffff;
-      padding: 16px 24px;
-      border: 2px solid #c000ff;
-      border-radius: 50px;
-      transition: 0.25s ease-out;
-
-      &:hover {
-        transition: 0.25s ease-in;
-        background-color: #c000ff;
-      }
-    }
   }
 }
 
@@ -112,26 +50,6 @@
 @media (max-width: 1024px) {
   .fs {
     padding: 130px 0px;
-
-    &__text-box {
-      &__upper-title {
-        &::before {
-          content: "";
-          width: 40px;
-        }
-      }
-
-      &__title {
-        margin-top: 20px;
-        font-size: 45px;
-        width: 100%;
-      }
-
-      &__desc {
-        font-size: 18px;
-        width: 100%;
-      }
-    }
 
     &__form-box {
       input {
@@ -143,11 +61,6 @@
       textarea {
         margin-top: 30px;
         width: 80%;
-      }
-
-      &__button {
-        font-size: 18px;
-        padding: 14px 17px;
       }
     }
   }

@@ -107,23 +107,6 @@
       color: #ffffff;
       margin-right: 100px;
     }
-
-    &__button {
-      font-family: "Mulish", sans-serif !important;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      color: #ffffff;
-      padding: 16px 20px;
-      border: 2px solid #c000ff;
-      border-radius: 50px;
-      transition: 0.25s ease-out;
-
-      &:hover {
-        transition: 0.25s ease-in;
-        background-color: #c000ff;
-      }
-    }
   }
 }
 
@@ -262,10 +245,6 @@
 
       &__button {
         text-align: center;
-        font-size: 18px;
-        padding: 14px 17px;
-        border: 2px solid #c000ff;
-        border-radius: 50px;
         width: 100%;
       }
     }
