@@ -23,6 +23,7 @@ if (menu && hamburger && overlay && navbar) {
         menu.classList.remove('flex-box-show');
         overlay.classList.remove('overlay-show');
         hamburger.classList.remove('menu-open');
+        hamburger.classList.remove('open-menu');
         menuActive = false;
 
         if (window.pageYOffset < 200) {
