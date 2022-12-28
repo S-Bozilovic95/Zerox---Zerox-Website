@@ -1,13 +1,13 @@
 /* eslint-disable no-unused-vars */
 import Swiper from 'swiper';
 
-const swiperDesktop = new Swiper('.cs__card-box-desktop', {
+const swiperDesktop = new Swiper('.card-sec__card-box-desktop', {
     slidesPerView: 5,
     spaceBetween: 0,
     centeredSlides: true,
 });
 
-const swiperMobile = new Swiper('.cs__card-box-mobile', {
+const swiperMobile = new Swiper('.card-sec__card-box-mobile', {
     slidesPerView: 'auto',
     loop: true,
     spaceBetween: 0,
@@ -18,8 +18,8 @@ const swiperMobile = new Swiper('.cs__card-box-mobile', {
 });
 
 // style for every second card in slider
-let cards = document.querySelectorAll('.cs__card-box-desktop__card');
-let mobileCards = document.querySelectorAll('.cs__card-box-mobile__card');
+let cards = document.querySelectorAll('.card-sec__card-box-desktop__card');
+let mobileCards = document.querySelectorAll('.card-sec__card-box-mobile__card');
 
 if (cards) {
     cards.forEach((el, index) => {

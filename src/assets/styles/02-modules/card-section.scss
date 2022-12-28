@@ -1,4 +1,4 @@
-.cs {
+.card-sec {
   padding: 230px 0px 130px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -35,7 +35,7 @@
         background-color: #401d6a6b;
       }
 
-      .cs__card-box__card__logo {
+      .card-sec__card-box__card__logo {
         background-color: #25133d;
       }
     }
@@ -99,7 +99,7 @@
         cursor: pointer;
       }
 
-      .cs__card-box__card__logo {
+      .card-sec__card-box__card__logo {
         background-color: #25133d;
       }
     }
@@ -175,7 +175,7 @@
           background-color: #401d6a6b;
         }
 
-        .cs__card-box-2__card__logo {
+        .card-sec__card-box-2__card__logo {
           background-color: #25133d;
         }
       }
@@ -228,7 +228,7 @@
   }
 }
 
-.cs-2 {
+.card-sec-2 {
   padding: 230px 0px 95px;
   background-size: auto;
   background-repeat: no-repeat;
@@ -238,7 +238,7 @@
 
 // responsive
 @media (max-width: 1500px) {
-  .cs {
+  .card-sec {
     &__text-box {
       margin-left: 0px;
     }
@@ -257,7 +257,7 @@
 }
 
 @media (max-width: 1024px) {
-  .cs {
+  .card-sec {
     // variation 1
     // desktop
     .swiper-button-next {
@@ -293,7 +293,7 @@
     }
   }
 
-  .cs-2 {
+  .card-sec-2 {
     padding: 130px 0px;
   }
 }
