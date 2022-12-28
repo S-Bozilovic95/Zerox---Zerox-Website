@@ -1,4 +1,4 @@
-.tb {
+.text-back {
   padding: 220px 0px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 // responsive
 
 @media (max-width: 1450px) {
-  .tb {
+  .text-back {
     &__text-box {
       flex: 0 0 60%;
     }
@@ -35,7 +35,7 @@
 }
 
 @media (max-width: 1024px) {
-  .tb {
+  .text-back {
     padding: 130px 0px;
     background-size: cover;
     background-repeat: no-repeat;

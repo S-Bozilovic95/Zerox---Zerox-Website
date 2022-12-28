@@ -1,4 +1,4 @@
-.fs {
+.form-sec {
   padding: 210px 0px;
   background-color: #13012a;
   background-position: center;
@@ -48,7 +48,7 @@
 
 // responsive
 @media (max-width: 1024px) {
-  .fs {
+  .form-sec {
     padding: 130px 0px;
 
     &__form-box {
