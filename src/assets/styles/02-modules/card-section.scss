@@ -16,6 +16,33 @@
     color: white;
   }
 
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        &:nth-child(2n) {
+          .card-sec__card-box-mobile__card,
+          .card-sec__card-box-desktop__card {
+            background: linear-gradient(
+              180deg,
+              #210a3e 0%,
+              rgba(8, 10, 18, 0) 100%
+            );
+            transition: 0.25s ease-out;
+
+            &:hover {
+              transition: 0.25s ease-in;
+              background-color: #401d6a6b;
+            }
+
+            .card-sec__card-box-2__card__logo {
+              background-color: #25133d;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .swiper-button-prev {
     color: white;
   }
@@ -25,20 +52,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .second-card {
-      background: linear-gradient(180deg, #210a3e 0%, rgba(8, 10, 18, 0) 100%);
-      transition: 0.25s ease-out;
-
-      &:hover {
-        transition: 0.25s ease-in;
-        background-color: #401d6a6b;
-      }
-
-      .card-sec__card-box__card__logo {
-        background-color: #25133d;
-      }
-    }
 
     &__card {
       text-align: center;
@@ -89,21 +102,6 @@
       }
     }
 
-    .second-card {
-      background: linear-gradient(180deg, #210a3e 0%, rgba(8, 10, 18, 0) 100%);
-      transition: 0.25s ease-out;
-
-      &:hover {
-        transition: 0.25s ease-in;
-        background-color: #401d6a6b;
-        cursor: pointer;
-      }
-
-      .card-sec__card-box__card__logo {
-        background-color: #25133d;
-      }
-    }
-
     &__card {
       padding: 50px 20px 200px;
       width: 80%;
@@ -135,7 +133,7 @@
         line-height: 130%;
         text-transform: capitalize;
         color: #a9afc3;
-        width: 60%;
+        width: 50%;
         margin: auto;
       }
     }

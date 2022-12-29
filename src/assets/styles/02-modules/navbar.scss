@@ -16,6 +16,7 @@
 
   &__small-menu-box {
     display: none;
+    margin-bottom: 30px;
 
     justify-content: space-between;
     align-items: center;
@@ -59,18 +60,11 @@
     }
   }
 
-  .flex-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
   &__box-1 {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex: 0 0 65%;
+    height: 100%;
 
     &__logo {
       margin-right: 100px;
@@ -81,7 +75,7 @@
     &__link-box {
       display: flex;
       justify-content: flex-start;
-      flex-wrap: wrap;
+      white-space: nowrap;
 
       &__link {
         margin-right: 40px;
@@ -144,9 +138,12 @@
       font-size: 20px;
       color: #ffffff;
       margin-right: 100px;
+      white-space: nowrap;
     }
   }
 }
+
+// custom classes
 
 .open-menu {
   span {
@@ -185,8 +182,6 @@
 @media (max-width: 1450px) {
   .navbar {
     &__box-1 {
-      flex: 0 0 55%;
-      margin-bottom: 20px;
       &__logo {
         margin-right: 25px;
       }
@@ -209,16 +204,6 @@
 
 @media (max-width: 1270px) {
   .navbar {
-    &__box-1 {
-      &__link-box {
-        &__link {
-          &:last-child {
-            margin-top: 5px;
-          }
-        }
-      }
-    }
-
     &__box-2 {
       &__phone {
         margin-right: 20px;
@@ -240,7 +225,7 @@
       display: flex;
     }
 
-    .flex-box {
+    .drop {
       justify-content: center;
       align-items: flex-start;
       flex-wrap: nowrap;
@@ -250,10 +235,10 @@
       transition: 0.25s ease-out;
     }
 
-    .flex-box-show {
+    .drop-show {
       max-height: 500px;
-      padding: 30px 0px;
       transition: 0.25s ease-in;
+      padding-bottom: 25px;
     }
 
     &__box-1 {

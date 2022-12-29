@@ -11,6 +11,7 @@
   color: #ffffff;
   text-transform: capitalize;
   transition: 0.25s ease-out;
+  white-space: nowrap;
 
   &:hover {
     transition: 0.25s ease-in;
@@ -30,6 +31,7 @@
   border: 2px solid #c000ff;
   border-radius: 50px;
   transition: 0.25s ease-out;
+  white-space: nowrap;
 
   &:hover {
     transition: 0.25s ease-in;

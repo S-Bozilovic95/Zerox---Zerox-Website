@@ -4,14 +4,8 @@
   color: white;
   position: relative;
 
-  &__flex-box {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
   &__text-box {
-    z-index: 3;
+    position: relative;
 
     &__title {
       margin-top: 22px;
@@ -42,6 +36,7 @@
 @media (max-width: 1024px) {
   .hero {
     padding: 130px 0px;
+    // background-size: 100% 100%;
 
     &__text-box {
       &__title {

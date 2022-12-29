@@ -17,22 +17,3 @@ const swiperMobile = new Swiper('.card-sec__card-box-mobile', {
     },
 });
 
-// style for every second card in slider
-let cards = document.querySelectorAll('.card-sec__card-box-desktop__card');
-let mobileCards = document.querySelectorAll('.card-sec__card-box-mobile__card');
-
-if (cards) {
-    cards.forEach((el, index) => {
-        if (index % 2 === 0) {
-            el.classList.add('second-card');
-        }
-    });
-}
-
-if (mobileCards) {
-    mobileCards.forEach((el, index) => {
-        if (index % 2 === 0) {
-            el.classList.add('second-card');
-        }
-    });
-}
